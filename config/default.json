@@ -1,0 +1,30 @@
+{
+  "port": 8080,
+  "mongoose": {
+    "uri": "mongodb://localhost/apiDB",
+    "options": {
+      "server": {
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      }
+    }
+  },
+  "security": {
+    "tokenLife" : 3600
+  },
+  "generator": {
+    "api": {
+      "version" : "v1"
+    },
+    "user": {
+      "username": "user",
+      "password": "secret"
+    },
+    "client": {
+      "name": "client",
+      "clientId": "clientID",
+      "clientSecret": "clientSecret"
+    }
+  }
+}
